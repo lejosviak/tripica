@@ -1,70 +1,83 @@
-:root {
-    --cor-primaria: #213555;
-    --cor-secundaria: #3E5879;
-    --cor-terciaria: #D8C4B6;
-    --cor-fundo-claro: #F5EFE7;
-    --alto-contraste-fundo: #000000;
-    --alto-contraste-texto: #ffffff;
-    --alto-contraste-link: #ffd700;
-  }
-  
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    background-color: var(--cor-fundo-claro);
-    color: var(--cor-primaria);
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F5EFE7;
+  color: #000000;
   }
   
   header {
-    background-color: var(--cor-secundaria);
+  background-color: #213555;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
   }
   
-  .nav-link {
-    color: var(--cor-terciaria);
-    font-weight: 600;
+  nav a {
+  color: #F5EFE7;
+  margin: 0 15px;
+  text-decoration: none;
   }
   
-  .inicio-fundo {
-    background-image: url('img/justin-bg.jpg');
-    background-size: cover;
-    background-position: right;
-    border-radius: 80px;
-    width: 100%;
-    height: 606px;
-    padding: 40px;
-    margin: 0 auto;
-    position: relative;
+  .hero {
+  background: linear-gradient(135deg, #D8C4B6, #3E5879);
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
   }
   
-  .img-inicio {
-    position: absolute;
-    right: 0;
-    top: 18rem;
-    width: 45rem;
-    height: auto;
+  .hero button {
+  background-color: #213555;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 1rem;
+  cursor: pointer;
   }
   
-  .botao-inicio,
-  .btn-primary {
-    background-color: var(--cor-primaria);
-    color: #fff;
-    border-radius: 30px;
-    border: none;
+  section {
+  padding: 2rem;
   }
   
-  .display-4 {
-    text-shadow: -5px 5px var(--cor-terciaria);
+  .galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
   }
   
-  h2 {
-    font-family: 'Lemon', serif;
-    font-size: 2.5em;
-    color: var(--cor-primaria);
+  .galeria-grid img {
+  width: 100%;
+  border-radius: 8px;
   }
   
-  #justin {
-    background: url('img/justin-background-right.png') top right no-repeat,
-                url('img/justin-background-left.png') bottom left no-repeat;
-    background-size: 180px 180px;
-    padding-top: 5rem;
-    margin: 3rem 0; 
+  form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  }
+  
+  form input,
+  form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+  
+  form button {
+  background-color: #213555;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  }
+  
+  footer {
+  background-color: #3E5879;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  }
+  
